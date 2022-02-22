@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="mstile" type="image/png" sizes="150x150" href="img/favicons/mstile-150x150.png">
+    <link rel="android-chrome" type="image/png" sizes="512x512" href="img/favicons/android-chrome-512x512.png">
+    <link rel="android-chrome" type="image/png" sizes="192x192" href="img/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="container">
+                <div class="header-item">
+                    <div class="header-logo-box">
+                        <a href="#" class="header-logo"></a>
+                        <div class="header-burger">
+                            <button class="burger" onclick="openModal"></button>
+                        </div>
+                    </div>
+                    <nav class="header-nav">
+                        <ul class="header-link">
+                            <li><a href="#events" class="skroll">Мероприятия</a></li>
+                            <li><a href="#schedule" class="skroll">Расписание</a></li>
+                            <li><a href="#info" class="skroll">О компании</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="nav-social">
+                        <li><a class="nav-inst" href="#"></a></li>
+                        <li><a class="nav-fb" href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="bg">
+        <div class="container">
+            <div class="bg-text">
+                <h1 class="bg-text-title">онлайн тренировки любой сложности</h1>
+                <h2>
+                    <span>> 15</span>
+                    "тренировок"
+                </h2>
+                <div class="bg-description">
+                    <p>в области спортивной физиологии и нутрициологии</p>
+                    <a href="#" class="bg-button">Узнать подробнее</a>
+                </div>
+                <a href="#events" class="button-down scroll"></a>
+            </div>
+            <div class="visual">
+                <div class="visual-bg">
+                    <div class="visual-bg-1"></div>
+                    <div class="visual-bg-2"></div>
+                </div>
+                <img src="image/girl.png" alt="girl">
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="events">
+            <div class="container">
+                <h3 class="events-title" id="events">Ближайшие события</h3>
+                <div class="events-box">
+                    <div class="box-item item-1">
+                        <div class="box-item-content item-gradient">
+                            <div class="box-text">
+                                <span>29.06 - 4.07</span>
+                                <p class="box-text-title">Марафон выносливости</p>
+                                <a onclick="showModalWin()">Участвовать</a>
+                            </div>  
+                            <span class="events-name">марафон</span>
+                            <div class="events-plus" onclick="showModalWin()"></div>
+                        </div>
+                    </div>
+                    <div class="box-item item-1">
+                        <div class="box-item-content item-gradient">
+                            <div class="box-text">
+                                <span>29.06 - 4.07</span>
+                                <p class="box-text-title">Марафон выносливости</p>
+                                <a onclick="showModalWin()">Участвовать</a>
+                            </div>  
+                            <span class="events-name">марафон</span>
+                            <div class="events-plus" onclick="showModalWin()"></div>
+                        </div>
+                    </div>
+                    <div class="box-item item-1">
+                        <div class="box-item-content item-gradient">
+                            <div class="box-text">
+                                <span>29.06 - 4.07</span>
+                                <p class="box-text-title">Марафон выносливости</p>
+                                <a onclick="showModalWin()">Участвовать</a>
+                            </div>  
+                            <span class="events-name">марафон</span>
+                            <div class="events-plus" onclick="showModalWin()"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="schedule" id="schedule">
+            <div class="container">
+                <div class="schedule-box">
+                    <h3>Расписание тренировок</h3>
+                    <p>22 - 28 июня</p>
+                </div>
+                <div class="schedule-grid">
+                    <div class="schedule-grid-item grid-item-1">
+                        <span class="grid-item-time">22 июня, 10:00</span>
+                        <div class="training-box">
+                            <img src="image/body.svg" alt="body">
+                            <div        class="title-box">                           
+                                <span class="training-title">Функциональный тренинг</span>
+                                <p class="training-description"> Улучшает физические качества и двигательные способности.</p>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="schedule-grid-item grid-item-2">
+                        <span class="grid-item-time">24 июня, 10:00</span>
+                        <div class="training-box">
+                            <img src="image/bottle.svg" alt="bottle">
+                            <div class="title-box">                                
+                                <span class="training-title">Body sculpt</span>
+                                <p class="training-description"> 
+                                    Упражнения помогут создать красивый рельеф 
+                                    и прийти&nbsp;в спортивную форму.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-grid-item grid-item-3">
+                        <span class="grid-item-time">26 июня, 10:00</span>
+                        <div class="training-box">
+                            <img src="image/dumbbell.svg" alt="dumbbell">
+                            <div class="title-box">                                
+                                <span class="training-title">L.A.B.</span>
+                                <p class="training-description">    
+                                    Упражнения помогут создать красивый рельеф 
+                                    и прийти&nbsp;в спортивную форму.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-grid-item grid-item-4 item-active">
+                        <span class="grid-item-time">23 июня, 10:00</span>
+                        <div class="training-box">
+                            <img src="image/jump.svg" alt="jump">
+                            <div class="title-box">
+                                <span class="training-title">Силовой микс</span>
+                                <p class="training-description">
+                                    Упражнения помогут создать красивый рельеф 
+                                    и прийти&nbsp;в спортивную форму.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-grid-item grid-item-5">
+                        <span class="grid-item-time">25 июня, 10:00</span>
+                        <div class="training-box">
+                            <img src="image/heart.svg" alt="body">
+                            <div class="title-box">                                
+                                <span class="training-title">Дыхательные практики</span>
+                                <p class="training-description">       
+                                    Упражнения помогут создать красивый рельеф 
+                                    и прийти&nbsp;в спортивную форму.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-grid-item grid-item-6">
+                        <span class="grid-item-time">27 июня, 10:00</span>
+                        <div class="training-box">
+                            <img src="image/weight.svg" alt="body">
+                            <div class="title-box">                                
+                                <span class="training-title">Комплексная разминка</span>
+                                <p class="training-description">                            
+                                    Упражнения помогут создать красивый рельеф 
+                                    и прийти&nbsp;в спортивную форму.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="subscribe">
+            <div class="subscribe-bg">
+                <div class="container">
+                    <form action="#" class="subscribe-box" id="form_sub">
+                        <h3 class="subscribe-box-title">Подпишитесь на рассылку</h3>
+                        <p class="input-email-error" id="email-sub-error">Некорректный адрес e-mail</p>                  
+                        <div class="subscribe-box-flex" id="subscribe">
+                            <div class="input-box">
+                                <input type="text" class="input-email-sub req" placeholder="Ваш e-mail">
+                                <div class="custom-checkbox">                                    
+                                    <input id="formAgreement" type="checkbox" class="checkbox-input req">
+                                    <label for="formAgreement" class="custom-checkbox-label req">
+                                        <span class="subscribe-box-checkbox-text">Согласен с обработкой 
+                                            <a href="#" class="personal-data">персональных данных</a>
+                                        </span>
+                                    </label>
+                                </div> 
+                            </div>                            
+                            <button type="submit" class="subscribe-btn bg-button">подписаться</button>
+                        </div>                                             
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="info" id="info">
+            <div class="container">
+                <div class="info-box">
+                    <div class="info-text">
+                        <h3 class="info-title">О компании</h3>
+                        <p class="info-description">
+                            Наша компания является одной&nbsp;из немногих, 
+                            кто предлагает фитнес услуги онлайн! 
+                            Оставайтесь с&nbsp;нами и&nbsp;вы сами увидите, 
+                            что мы проводим не&nbsp;только онлайн-тренировки.
+                        </p>
+                        <div class="advantages-box">
+                            <div class="advantages-item">
+                                <span class="advantages-title">Экономия времени</span>
+                                <p class="advantages-description">
+                                    Не нужно тратить время на дорогу
+                                </p>
+                            </div>
+                            <div class="advantages-item">
+                                <span class="advantages-title">Индивидуальный подход</span>
+                                <p class="advantages-description">
+                                    Внимание тренера пренадлежит только вам
+                                </p>
+                            </div>
+                            <div class="advantages-item">
+                                <span class="advantages-title">Экономия денег</span>
+                                <p class="advantages-description">
+                                    Средняя цена одной тренировки - 700₽
+                                </p>
+                            </div>
+                            <div class="advantages-item">
+                                <span class="advantages-title">Опытный персонал</span>
+                                <p class="advantages-description">
+                                    Стаж работы у наших тренеров от 5 лет
+                                </p>
+                            </div>
+                        </div>
+                        <a href="#" class="bg-button info-btn">Записаться</a>
+                    </div>
+                    <div class="info-img">
+                        <div class="info-img-bg"></div>
+                        <img src="image/trainer.png" alt="trainer">
+                    </div>                    
+                </div>
+                <div class="advantages-box">
+                    <div class="advantages-item">
+                        <span class="advantages-title">Экономия времени</span>
+                        <p class="advantages-description">
+                            Не нужно тратить время на дорогу
+                        </p>
+                    </div>
+                    <div class="advantages-item">
+                        <span class="advantages-title">Индивидуальный подход</span>
+                        <p class="advantages-description">
+                            Внимание тренера пренадлежит только вам
+                        </p>
+                    </div>
+                    <div class="advantages-item">
+                        <span class="advantages-title">Экономия денег</span>
+                        <p class="advantages-description">
+                            Средняя цена одной тренировки - 700₽
+                        </p>
+                    </div>
+                    <div class="advantages-item">
+                        <span class="advantages-title">Опытный персонал</span>
+                        <p class="advantages-description">
+                            Стаж работы у наших тренеров от 5 лет
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="footer-item header-item">                    
+                    <nav class="footer-nav">
+                        <a href="#" class="header-logo"></a>
+                        <ul class="footer-links">                    
+                            <li><a href="#events" class="scroll">Мероприятия</a></li>
+                            <li><a href="#schedule" class="scroll">Расписание</a></li>
+                            <li><a href="#info" class="scroll">О компании</a></li>                                        
+                        </ul>
+                    </nav>
+                    <ul class="footer-nav-social">
+                        <li><a href="mailto:info@freefit.com">info@freefit.com</a></li>
+                        <li class="social-block">
+                            <a class="nav-inst" href="#"></a>
+                            <a class="nav-fb" href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <p>© 2020, Все права защищены</p>
+                    <p>Сделано в рамках курса учебной платформы <a href="#">Annblok</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal" id="modal">
+        <div class="header-item">
+            <div class="header-modal">
+                <a href="#" class="header-logo"></a>
+                <button class="burger-close" onclick="closeModalMenu()"></button>                
+            </div>                                
+            <nav class="header-nav">
+                <ul class="header-links">                    
+                    <li><a href="#events" class="scroll" onclick="closeModalMenu()">Мероприятия</a></li>
+                    <li><a href="#schedule" class="scroll" onclick="closeModalMenu()">Расписание</a></li>
+                    <li><a href="#info" class="scroll" onclick="closeModalMenu()">О компании</a></li>                                        
+                </ul>
+            </nav>
+            <ul class="nav-social">
+                <li><a class="nav-inst" href="#"></a></li>
+                <li><a class="nav-fb" href="#"></a></li>
+            </ul> 
+        </div>        
+    </div>
+    <div style="text-align: center; display: block;" id="popupWin" class="modalwin">
+        <button type="button" class="modal-close" onclick="closeModal()"></button>
+        <div class="modal-box">
+            <p class="modal-title">Заявка на участие
+                «Марафон выносливости»</p>
+            <p class="modal-description">
+                Заполните все поля, и мы пришлем информацию в ближайшее время
+            </p>
+        </div>        
+        <form action="#" class="modal-form" id="form">
+            <input type="text" class="input-email req" placeholder="Ваш e-mail">
+            <p class="input-email-error" id="email-error">Некорректный адрес e-mail</p>
+            <input type="text" id="tel" class="input-tel req" placeholder="Ваш номер телефона" maxlength="18">
+            <p class="input-tel-error" id="tel-error">Некорректный номер телефона</p>
+            <button type="submit" class="modal-form-btn bg-button">отправить</button>
+        </form>
+    </div>
+    <script>
+
+        // Smooth Scroll
+
+        const links = document.querySelectorAll(".scroll");
+
+        for (const link of links) {
+        link.addEventListener("click", clickHandler);
+        }
+
+        function clickHandler(e) {
+        e.preventDefault();
+        const href = this.getAttribute("href");
+
+        document.querySelector(href).scrollIntoView({
+            behavior: "smooth"
+            });
+        }
+
+        // Modal Menu
+
+        function openModal() {
+            var darkLayer = document.createElement('div'); // layer blackout
+            darkLayer.id = 'shadow';
+            document.body.appendChild(darkLayer); // blackout on
+            document.getElementById("modal").style.top = "0px";            
+        }
+
+        function closeModalMenu() {
+            document.getElementById("modal").style.top = "-500px"
+            document.getElementById("shadow").parentNode.removeChild(document.getElementById("shadow"));
+        }
+
+        // ModalWin
+
+        function showModalWin() {
+            var darkLayer = document.createElement('div'); // layer blackout
+            darkLayer.id = 'shadow';
+            document.body.appendChild(darkLayer); // blackout on
+
+            var modalWin = document.getElementById('popupWin');
+            modalWin.style.display = 'block';        
+        }
+
+        function closeModal() {
+            
+            document.getElementById("popupWin").style.display = "none";
+            document.getElementById("shadow").parentNode.removeChild(document.getElementById("shadow"));
+            document.getElementById('email-error').style.visibility = 'hidden';
+            document.getElementById('tel-error').style.visibility = 'hidden';
+
+            let formError = document.querySelectorAll('.error');
+                
+            for (let index = 0; index < formError.length; index++) {
+                const input = formError[index];
+                input.value = "";
+                input.parentElement.classList.remove('error');
+                input.classList.remove('error');
+            }
+        }
+
+        //Mask for Tel
+
+            jQuery(function($){
+                $("#tel").mask("+7 (999) 999-99-99");
+            });
+
+        //Validation
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('form');
+            const form_sub = document.getElementById('form_sub');
+            form.addEventListener('submit', formSend);
+            form_sub.addEventListener('submit', formSendSub);
+
+            async function formSend(e) {
+                e.preventDefault();
+                let error = formValidate(form);
+                if (error === 0) {
+                    alert("The entry was created successfully!")
+                } else {
+                    alert("Check all fields please!");
+                }              
+            }
+
+            async function formSendSub(e) {
+                e.preventDefault();
+                let error = ValidationSub(form_sub);
+                if (error === 0) {
+                    alert("Congratulations! You are my subscriber!");
+                } else {
+                    alert("Check all fields please!");
+                }                
+            }
+
+            function ValidationSub(form_sub) {
+                
+                let error = 0;
+                let formReq = document.querySelectorAll('.req');            
+                    
+                for (let index = 0; index < formReq.length; index++) {
+                    const input = formReq[index];
+                    formRemoveError(input);
+                    if (input.classList.contains('input-email-sub')){
+                        if (!emailTest(input)) {
+                            formAddError(input);
+                            document.getElementById("email-sub-error").style.visibility = 'visible';
+                            input.onfocus = function() {
+                                if (input.classList.contains('error')) {
+                                    formRemoveError(input);
+                                    document.getElementById("email-sub-error").style.visibility = 'hidden';
+                                } 
+                            }
+                            error++;
+                        }
+                    }
+                    if (input.classList.contains('checkbox-input')) {
+                        if (input.getAttribute("type") === "checkbox" && input.checked === false) {
+                            formAddError(input);
+                            input.onfocus = function() {
+                                if (input.classList.contains('error')) {
+                                    formRemoveError(input);
+                                }
+                            }
+                            error++;
+                        }
+                    }                    
+                }
+                return error;                
+            }            
+
+            function formValidate(form) {
+
+                let error = 0;
+                let formReq = document.querySelectorAll('.req');
+                
+                for (let index = 0; index < formReq.length; index++) {
+                    const input = formReq[index];
+                    formRemoveError(input);
+                    
+                    if (input.classList.contains('input-email')){
+                        if (!emailTest(input)) {
+                            formAddError(input);
+                            document.getElementById("email-error").style.visibility = 'visible';
+                            input.onfocus = function() {
+                                if (input.classList.contains('error')) {
+                                    formRemoveError(input);
+                                    document.getElementById("email-error").style.visibility = 'hidden';
+                                }
+                            }
+                            error++;
+                        }
+                    }
+                    if (input.classList.contains('input-tel')){
+                        if (telTest(input)) {
+                            formAddError(input);
+                            document.getElementById("tel-error").style.visibility = 'visible';
+                            input.onfocus = function() {
+                                if (input.classList.contains('error')) {
+                                    formRemoveError(input);
+                                    document.getElementById("tel-error").style.visibility = 'hidden';
+                                }
+                            }
+                            error++;
+                        }
+                    }
+                }
+                return error;
+            }
+            
+
+            function formAddError(input) {
+                input.parentElement.classList.add('error');
+                input.classList.add('error');
+            }
+
+            function formRemoveError(input) {
+                input.parentElement.classList.remove('error');
+                input.classList.remove('error');
+            }
+
+            function emailTest(input) {
+                return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,5})+$/.test(input.value);
+            }
+            
+            function telTest(input) {
+                return !/^((\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10}$/.test(input.value);
+            }
+        });
+    </script>
+    <div id="shadow"></div>
+</body>
+
+</html>
