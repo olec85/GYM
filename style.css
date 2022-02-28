@@ -345,8 +345,13 @@ h3{
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
-    transition: .3s;
+    transition: 3s;
 }
+.title-box:hover .training-description{
+    margin-top: 100px;
+    display: contents;
+}
+
 .item-active{
     overflow-y: visible;
     background: linear-gradient(180deg, rgba(251, 241, 56, 0.6) 0%, rgba(253, 249, 182, 0.45) 100%);
