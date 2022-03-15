@@ -1031,6 +1031,9 @@ a {
     }
     .bg-text-title {
         margin-bottom: 46px;
+        font-size: 26px;
+        line-height: 125%;
+        letter-spacing: 0.03em;
     }
     .bg-text h2 {
         margin-bottom: 18px;
@@ -1176,6 +1179,11 @@ a {
 
 }
 @media (max-width: 380px){
+    .bg-text-title {
+        font-size: 26px;
+        line-height: 125%;
+        letter-spacing: 0.03em;
+    }
     .events-title {
         font-weight: 700;
         font-size: 26px;
