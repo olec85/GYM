@@ -80,6 +80,18 @@
     height: 22px;
     border: none;
     cursor: pointer;
+}
+.burger-close {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    background-image: url(image/close.svg);
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+.header-burger {
+    align-self: flex-end;
     display: none;
 }
 .bg {
@@ -755,15 +767,7 @@ a {
     justify-content: space-between;
     align-items: center;
 }
-.burger-close {
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: transparent;
-    background-image: url(image/close.svg);
-    width: 20px;
-    height: 20px;
-    border: none;
-}
+
 #modal .header-nav {
     display: flex;
     position: relative;
@@ -1170,7 +1174,71 @@ a {
         margin-bottom: 30px;
     }
 
-
+}
+@media (max-width: 380px){
+    .events-title {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 125%;
+    }
+    .box-text span {
+        display: block;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 100%;
+        opacity: 0.6;
+    }
+    .box-text-title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 120%;
+    }
+    .schedule-box h3 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .schedule-box p {
+        font-size: 16px;
+        line-height: 120%;
+        opacity: 0.7;
+    }
+    .subscribe-box-title {
+        position: relative;
+        z-index: 1;
+        font-size: 26px;
+        line-height: 32px;
+        text-align: center
+    }
+    .subscribe-box-title::before {
+        top: 65px;
+        left: 39px;
+        padding: 18px;
+    }
+    .subscribe-box-flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .input-email-sub {
+        padding: 23px 158px;
+        padding-left: 23px;
+    }
+    .bg-button {
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        padding: 20px 110px 20px 90px;
+    }
+    .subscribe-bg {
+        height: 416px;
+    }
+    .advantages-box {
+        display: flex;
+        flex-direction: column;
+    }
+    .item-yoga {
+        background-position: right;
+    }
 
 }
-

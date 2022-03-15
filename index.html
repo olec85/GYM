@@ -104,7 +104,7 @@
                                 <span>29.06 - 4.07</span>
                                 <p class="box-text-title">Йога как стиль жизни</p>
                                 <a onclick="showModalWin()">Участвовать</a>
-                            </div>  <!--почему то фото не встало по центру блока-->
+                            </div>
                             <span class="events-name">вебинар</span>
                             <div class="events-plus" onclick="showModalWin()"></div>
                         </div>
@@ -131,7 +131,7 @@
                     </div>
                     <div class="schedule-grid-item grid-item-2">
                         <span class="grid-item-time">24 июня, 10:00</span>
-                        <div class="training-box"><!--как плавности добавить???-->
+                        <div class="training-box">
                             <img src="image/bottle.svg" alt="bottle">
                             <div class="title-box">                                
                                 <span class="training-title">Body sculpt</span>
@@ -320,7 +320,7 @@
             </div>
         </div>
     </footer>
-    <div class="modal" id="modal">
+    <div class="modal" id="modal" style="top: -500px;">
         <div class="header-item">
             <div class="header-modal">
                 <a href="#" class="header-logo"></a>
@@ -339,7 +339,7 @@
             </ul> 
         </div>        
     </div>
-    <div id="popupWin" class="modalwin"><!--я тут убрал и сайт вообще перестал функционировать-->
+    <div id="popupWin" class="modalwin">
         <button type="button" class="modal-close" onclick="closeModal()"></button>
         <div class="modal-box">
             <p class="modal-title">Заявка на участие
@@ -357,6 +357,8 @@
         </form>
     </div>
     <script>
+
+       
 
         // Smooth Scroll
 
@@ -381,11 +383,11 @@
             var darkLayer = document.createElement('div'); // layer blackout
             darkLayer.id = 'shadow';
             document.body.appendChild(darkLayer); // blackout on
-            document.getElementById("modal").style.top = "0px";            
+            document.getElementById("modal").style.top = "-500px";            
         }
 
         function closeModalMenu() {
-            document.getElementById("modal").style.top = "-500px"
+            document.getElementById("modal").style.top = "0px"
             document.getElementById("shadow").parentNode.removeChild(document.getElementById("shadow"));
         }
 
@@ -545,6 +547,7 @@
                 return !/^((\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10}$/.test(input.value);
             }
         });
+    
     </script>
     <div id="shadow"></div>
 </body>
