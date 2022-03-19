@@ -27,11 +27,11 @@
         <div class="header">
             <div class="container">
                 <div class="header-item">
-                    <div class="header-burger">
-                        <button class="burger" onclick="openModal()"></button>
-                    </div>
                     <div class="header-logo-box">
                         <a href="#" class="header-logo"></a>
+                    </div>
+                    <div class="header-burger">
+                        <button class="burger" onclick="openModal()"></button>
                     </div>
                     <nav>
                         <ul class="header-link">
@@ -320,9 +320,9 @@
     </footer>
     <div class="modal" id="modal" style="top: -400px;">
         <ul class="header-link">                    
-            <li><a href="#events">Мероприятия</a></li>
-            <li><a href="#">Расписание</a></li>
-            <li><a href="#">О компании</a></li>                                        
+            <li><a href="#events" class="scroll">Мероприятия</a></li>
+            <li><a href="#schedule" class="scroll">Расписание</a></li>
+            <li><a href="#info" class="scroll">О компании</a><li></li>                                                                              
         </ul>
         <button class="burger-close" onclick="closeModal()"></button>      
     </div>
