@@ -27,13 +27,13 @@
         <div class="header">
             <div class="container">
                 <div class="header-item">
+                    <div class="header-burger">
+                        <button class="burger" onclick="openModal()"></button>
+                    </div>
                     <div class="header-logo-box">
                         <a href="#" class="header-logo"></a>
-                        <div class="header-burger">
-                            <button class="burger" onclick="openModal"></button>
-                        </div>
                     </div>
-                    <nav class="header-nav">
+                    <nav>
                         <ul class="header-link">
                             <li><a class="nav-items" href="#events" >Мероприятия</a></li>
                             <li><a class="nav-items" href="#schedule" >Расписание</a></li>
@@ -318,26 +318,53 @@
             </div>
         </div>
     </footer>
-    <div class="modal" id="modal" style="top: -500px;">
-        <div class="header-item">
-            <div class="header-modal">
+    <div class="modal" id="modal" style="top: -400px;">
+        <ul class="header-link">                    
+            <li><a href="#events">Мероприятия</a></li>
+            <li><a href="#">Расписание</a></li>
+            <li><a href="#">О компании</a></li>                                        
+        </ul>
+        <button class="burger-close" onclick="closeModal()"></button>      
+    </div>
+    <script>
+          // Menu
+
+       function openModal() {
+           document.getElementById("modal").style.top = "0px";
+       }
+
+       function closeModal() {
+           document.getElementById("modal").style.top = "-400px";
+       }
+
+        // Modal Menu
+
+        function openModal() {
+            var darkLayer = document.createElement('div'); // layer blackout
+            darkLayer.id = 'shadow';
+            document.body.appendChild(darkLayer); // blackout on
+            document.getElementById("modal").style.top = "0px";            
+        }
+
+        function closeModalMenu() {
+            document.getElementById("modal").style.top = "-500px"
+            document.getElementById("shadow").parentNode.removeChild(document.getElementById("shadow"));
+        }
+        /*<div class="header-modal">
                 <a href="#" class="header-logo"></a>
                 <button class="burger-close" onclick="closeModalMenu()"></button>                
-            </div>                                
+            </div>
+             <div class="header-item">
+                                            
             <nav class="header-nav">
-                <ul class="header-links">                    
-                    <li><a href="#events" class="scroll" onclick="closeModalMenu()">Мероприятия</a></li>
-                    <li><a href="#schedule" class="scroll" onclick="closeModalMenu()">Расписание</a></li>
-                    <li><a href="#info" class="scroll" onclick="closeModalMenu()">О компании</a></li>                                        
-                </ul>
+                
             </nav>
             <ul class="nav-social">
                 <li><a class="nav-inst" href="#"></a></li>
                 <li><a class="nav-fb" href="#"></a></li>
             </ul> 
-        </div>        
-    </div>
-    <div id="popupWin" class="modalwin">
+        </div> 
+        <div id="popupWin" class="modalwin">
         <button type="button" class="modal-close" onclick="closeModal()"></button>
         <div class="modal-box">
             <p class="modal-title">Заявка на участие
@@ -354,7 +381,7 @@
             <button type="submit" class="modal-form-btn bg-button">отправить</button>
         </form>
     </div>
-    <script>
+            */
 
        
 
@@ -375,19 +402,7 @@
             });
         }
 
-        // Modal Menu
-
-        function openModal() {
-            var darkLayer = document.createElement('div'); // layer blackout
-            darkLayer.id = 'shadow';
-            document.body.appendChild(darkLayer); // blackout on
-            document.getElementById("modal").style.top = "-500px";            
-        }
-
-        function closeModalMenu() {
-            document.getElementById("modal").style.top = "0px"
-            document.getElementById("shadow").parentNode.removeChild(document.getElementById("shadow"));
-        }
+        
 
         // ModalWin
 
@@ -400,7 +415,7 @@
             modalWin.style.display = 'block';        
         }
 
-        function closeModal() {
+      /*  function closeModal() {
             
             document.getElementById("popupWin").style.display = "none";
             document.getElementById("shadow").parentNode.removeChild(document.getElementById("shadow"));
@@ -415,7 +430,7 @@
                 input.parentElement.classList.remove('error');
                 input.classList.remove('error');
             }
-        }
+        }*/
 
         //Mask for Tel
 
