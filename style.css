@@ -253,18 +253,16 @@ h3{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center right -112px;
+  
 }
 .item-yoga:hover{
     cursor: pointer;
-    opacity: 40%;
 }
 .item-1:hover{
     cursor: pointer;
-    opacity: 40%;
 }
 .item-2:hover{
     cursor: pointer;
-    opacity: 40%;
 }
 .box-item{
     position: relative;
@@ -505,14 +503,14 @@ h3{
     gap: 20px;
 }
 .input-email-sub{
-    padding: 23px 140px;
+    padding: 23px;
     padding-left: 23px;
     letter-spacing: 1.2px;
     border: 1px solid #fff;
     margin-bottom: 13px;
     font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 400;
+    width: 100%;
 }
 .custom-checkbox{
     display: flex;
@@ -1455,6 +1453,10 @@ a {
     .copyright {
         flex-direction: column;
         gap: 16px;
+    }
+    .checkbox:checked + label,
+    .checkbox:not(:checked) + label{
+        padding-left: 28px;
     }
 
 }
