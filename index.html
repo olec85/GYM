@@ -325,6 +325,23 @@
         </ul>
         <button class="burger-close" onclick="closeModal()"></button>      
     </div>
+    <div style="text-align: center; display: none;" id="popupWin" class="modalwin">
+        <button type="button" class="modal-close" onclick="closeModal()"></button>
+        <div class="modal-box">
+            <p class="modal-title">Заявка на участие
+                «Марафон выносливости»</p>
+            <p class="modal-description">
+                Заполните все поля, и мы пришлем информацию в ближайшее время
+            </p>
+        </div>        
+        <form action="#" class="modal-form" id="form">
+            <input type="text" class="input-email req" placeholder="Ваш e-mail">
+            <p class="input-email-error" id="email-error" style="visibility: hidden;">Некорректный адрес e-mail</p>
+            <input type="text" id="tel" class="input-tel req" placeholder="Ваш номер телефона" maxlength="18">
+            <p class="input-tel-error" id="tel-error" style="visibility: hidden;">Некорректный номер телефона</p>
+            <button type="submit" class="modal-form-btn bg-button">отправить</button>
+        </form>
+    </div>
     <script>
           // Menu
 
@@ -414,7 +431,7 @@
             modalWin.style.display = 'block';        
         }
 
-      /*  function closeModal() {
+          function closeModal() {
             
             document.getElementById("popupWin").style.display = "none";
             document.getElementById("shadow").parentNode.removeChild(document.getElementById("shadow"));
@@ -429,7 +446,7 @@
                 input.parentElement.classList.remove('error');
                 input.classList.remove('error');
             }
-        }*/
+        }
 
         //Mask for Tel
 

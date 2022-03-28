@@ -1001,7 +1001,7 @@ a {
     background-repeat: no-repeat;
     transition: .3s;
 }
-/*
+
 .modalwin {
     width: 500px;
     background: #F3F3F3;
@@ -1027,7 +1027,7 @@ a {
     position: absolute;
     top: 20px;
     right: 20px;
-}*/
+}
 .modal-box {
     width: 403px;
     margin: 0 auto;
@@ -1419,9 +1419,30 @@ a {
     .copyright {
         gap: 87px;
     }
+    .modalwin {
+        width: 250px;
+    }
+    .modal-title {
+        font-size: 22px;
+        width: 220px;
+    }
+    .modal-box {
+        width: 220px;
+    }
+    .modal-title::before {
+        left: -21px;
+        padding: 25px;
+    }
 
 }
 @media (max-width: 380px){
+    .modalwin {
+        margin-left: 36px;
+        width: 200px;
+    }
+    .modal-form-btn .bg-button{
+        padding: 23px 0;
+    }
     .bg-text-title {
         font-size: 26px;
         line-height: 125%;
@@ -1470,7 +1491,7 @@ a {
         flex-direction: column;
     }
     .input-email-sub {
-        padding: 19px 175px 19px 25px;
+        padding: 19px 87px 19px 25px;
     }
     .subscribe-box {
         max-width: 340px;
@@ -1511,7 +1532,7 @@ a {
     }
     .footer-nav-social {
         justify-content: center;
-        gap: 154px;
+        gap: 128px;
     }
     .copyright {
         flex-direction: column;
