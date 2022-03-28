@@ -1562,4 +1562,10 @@ a {
         gap: 22px;
         margin-bottom: 12px;
     }
+    .modalwin {
+        margin-left: 8px;
+    }
+    .visual img {
+        width: 89%;
+    }
 }
