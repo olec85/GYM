@@ -1372,6 +1372,12 @@ a {
     }
 
 }
+@media ( max-width: 576px){
+    .info-box {
+        display: flex;
+        flex-direction: column;
+    }
+}
 @media (max-width: 426px){
     .box-text-title {
         font-size: 19px;
@@ -1407,9 +1413,7 @@ a {
     .advantages-box {
         padding-bottom: 100px;
     }
-    .info-img {
-       display: none;
-    }
+    
     .footer-links {
         gap: 45px;
     }
